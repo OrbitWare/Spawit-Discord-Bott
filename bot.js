@@ -14,4 +14,5 @@ client.on('message', msg => {
   }
 });
 
-client.login('NjAxMTA4NDYwOTY0MTUxMzAx.XTG0DQ.CGjBZ9jMU5HsWW-6SxDbBed-NhA');
+// CLIENT LOGIN DELETED
+client.login('');
