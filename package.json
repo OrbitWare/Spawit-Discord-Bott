@@ -1,0 +1,14 @@
+{
+  "name": "spawit-ozelbot",
+  "version": "0.0.1",
+  "description": "Made By Y3S",
+  "main": "bot.js",
+  "scripts": {
+    "test": "node bot.js"
+  },
+  "author": "Y3S",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}
