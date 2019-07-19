@@ -10,7 +10,31 @@ client.on('message', msg => {
     msg.channel.sendMessage('Aleyküm Selam Hoşgeldin');
   }
   if (msg.content.toLowerCase() === '!spawit') {
-    msg.channel.sendMessage('Test');
+    msg.channel.sendMessage('Spawit Türkiye icin kurulmus bir Rakbetci Sitesidir. Suanda Beta da oldugu icin, tek bir Ranksistemiyle herkes karisik oyniyo.');
+  }
+
+  if (msg.content.toLowerCase() === '!que') {
+
+    var url = 'https://www.spawit.com/api/getque';
+
+    http.get(url, function(res){
+      var body = '';
+
+      res.on('data', function(chunk){
+        body += chunk;
+      });
+
+      res.on('end', function(){
+        var fbResponse = JSON.parse(body);
+
+        msg.channel.sendMessage(fbResponse);
+      });
+    }).on('error', function(e){
+      console.log("Got an error: ", e);
+    });
+
+
+
   }
 });
 
