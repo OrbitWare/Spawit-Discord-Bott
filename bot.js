@@ -10,7 +10,7 @@ client.on('message', msg => {
     msg.channel.sendMessage('Aleyküm Selam Hoşgeldin');
   }
   if (msg.content.toLowerCase() === '!spawit') {
-    msg.channel.sendMessage('Amacı Türk Topluluğunu Bi Araya Getirmek Olan Sistem');
+    msg.channel.sendMessage('Test');
   }
 });
 
